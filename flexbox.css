@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(31, 31, 30);
+}
+
+div {
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.parent {
+  height: 100vh;
+  display: flex;
+  gap: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(31, 31, 30);
+}
+
+.happyChild {
+  flex: 0.5;
+  align-self: stretch;
+  background-color: rgba(26, 106, 211, 0.992);
+  align-content: center;
+}
+
+.rightSide {
+  padding: 0px;
+  margin: 0px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 31, 30);
+}
+
+.madChild {
+  flex: 1;
+  align-self: stretch;
+  background-color: rgba(206, 54, 211, 0.992);
+  align-content: center;
+}
+
+.bottomrow {
+  background-color: rgb(31, 31, 30);
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+}
+
+.child1,
+.child2,
+.child3 {
+  flex: 3;
+  align-content: center;
+}
+
+.child1 {
+  background-color: blueviolet;
+}
+
+.child2 {
+  background-color: rgb(154, 86, 218);
+}
+.child3 {
+  background-color: rgb(67, 7, 122);
+}
