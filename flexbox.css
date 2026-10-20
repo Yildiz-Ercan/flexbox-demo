@@ -9,11 +9,11 @@ div {
 }
 
 .parent {
-  height: 100vh;
+  height: 98vh;
+  margin: 6px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 10px;
   gap: 10px;
   background-color: rgb(31, 31, 30);
 }
@@ -64,4 +64,80 @@ div {
 }
 .child3 {
   background-color: rgb(67, 7, 122);
+}
+
+/* Smooth Color Visualizer */
+.happyChild,
+.madChild,
+.child1,
+.child2,
+.child3 {
+  transition:
+    background-color 1.5s ease,
+    box-shadow 1.5s ease,
+    filter 1.5s ease;
+
+  box-shadow: 0 0 25px var(--glow-color, transparent);
+}
+
+/* Sanfter Glow-Effekt */
+.happyChild,
+.madChild,
+.child1,
+.child2,
+.child3 {
+  filter: saturate(1.2);
+}
+
+.music-start {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(31, 31, 30, 0.96);
+  transition: opacity 0.6s ease;
+}
+
+.music-start button {
+  padding: 18px 30px;
+  color: white;
+  background: #7c3aed;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 30px #7c3aed88;
+}
+
+.music-start button:hover {
+  background: #9333ea;
+}
+
+.music-start.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.youtube-background {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0.01;
+  pointer-events: none;
+}
+
+.youtube-background iframe {
+  width: 200px;
+  height: 200px;
+  border: 0;
+}
+
+.parent {
+  position: relative;
+  z-index: 1;
 }

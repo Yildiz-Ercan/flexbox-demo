@@ -1,10 +1,25 @@
 <!doctype html>
 <html>
   <head>
-    <title>Flexbox Demo</title>
+    <title>Music Visualizer</title>
     <link rel="stylesheet" href="flexbox.css" />
   </head>
   <body>
+    <div class="music-start" id="musicStart">
+      <button id="startMusic">▶ Start Visualizer</button>
+    </div>
+
+    <div class="youtube-background">
+      <iframe
+        id="youtubePlayer"
+        src="https://www.youtube.com/embed/Y-sdz_i9KnI?enablejsapi=1&autoplay=0&loop=1&playlist=Y-sdz_i9KnI&playsinline=1"
+        title="Hintergrundmusik"
+        allow="autoplay; encrypted-media"
+        referrerpolicy="strict-origin-when-cross-origin"
+      >
+      </iframe>
+    </div>
+
     <div class="parent">
       <div class="happyChild"></div>
       <div class="rightSide">
@@ -16,5 +31,7 @@
         </div>
       </div>
     </div>
+
+    <script src="visualizer.js"></script>
   </body>
 </html>
